@@ -74,24 +74,24 @@ namespace HepsiburadaRover.BusinessLogicLayer
         {
             switch (rover.direction)
             {
-                case Directions.N:
+              case Directions.N:
                     rover.y++;
-                    if(rover.y > m.y || rover.y < m.y)
+                    if (rover.y > m.y || rover.y < 0)
                         Console.WriteLine("Rover out of area!!!");
                     break;
                 case Directions.E:
                     rover.x++;
-                    if (rover.x > m.x || rover.x < m.x)
+                    if (rover.x > m.x || rover.x < 0)
                         Console.WriteLine("Rover out of area!!!");
                     break;
                 case Directions.W:
                     rover.x--;
-                    if (rover.x > m.x || rover.x < m.x)
+                    if (rover.x > m.x || rover.x < 0)
                         Console.WriteLine("Rover out of area!!!");
                     break;
                 case Directions.S:
                     rover.y--;
-                    if (rover.y > m.y || rover.y < m.y)
+                    if (rover.y > m.y || rover.y < 0)
                         Console.WriteLine("Rover out of area!!!");
                     break;
             }
