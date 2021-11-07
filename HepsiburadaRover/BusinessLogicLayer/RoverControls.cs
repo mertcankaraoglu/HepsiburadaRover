@@ -74,7 +74,7 @@ namespace HepsiburadaRover.BusinessLogicLayer
         {
             switch (rover.direction)
             {
-                case Directions.N:
+              case Directions.N:
                     rover.y++;
                     if (rover.y > m.y || rover.y < 0)
                         Console.WriteLine("Rover out of area!!!");
