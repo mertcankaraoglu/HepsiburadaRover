@@ -11,7 +11,8 @@ namespace HepsiburadaRover.Tests
         public void RoverActionTest()
         {
             Rover r1 = new Rover { x = 2, y = 2, direction = EntityLayer.Enum.Directions.N };
-            char[] moves = { 'L', 'M', 'L', 'M', 'L', 'M', 'L', 'M', 'M' };
+            string input = "LMLMLMLMM";
+            char[] moves = input.ToCharArray();
             Matrix m = new Matrix { x = 10, y = 10 };
             RoverControls.RoverAction(r1, moves, m);
 
